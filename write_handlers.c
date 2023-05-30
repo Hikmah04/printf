@@ -10,7 +10,7 @@
  * @precision: precision specifier.
  * @size: Size specifier.
  *
- * Return: Number of chars printed.
+ * return: Number of chars printed.
  */
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
@@ -196,15 +196,15 @@ int write_unsgnd(int is_negative, int ind,
 }
 
 /**
- * write_pointer - Write a memory address.
- * @buffer: Arrays of chars.
+ * write_pointer - write a memory address.
+ * @buffer: arrays of chars.
  * @ind: Index at which the number starts in the buffer.
- * @length: Length of number.
- * @width: Wwidth specifier.
- * @flags: Flags specifier.
+ * @length: length of number.
+ * @width: width specifier.
+ * @flags: flags specifier.
  * @padd: Char representing the padding.
  * @extra_c: Char representing extra char.
- * @padd_start: Index at which padding should start.
+ * @padd_start: index at which padding should start.
  *
  * Return: Number of written chars.
  */
