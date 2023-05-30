@@ -17,7 +17,7 @@ int print_char(va_list types, char buffer[],
 {
 	char a = va_arg(types, int);
 
-	return (handle_write_char(c, buffer, flags, width, precision, size));
+	return (handle_write_char(a, buffer, flags, width, precision, size));
 }
 /************************* PRINT A STRING *************************/
 /**
@@ -167,7 +167,7 @@ int print_binary(va_list types, char buffer[],
 
 	d = va_arg(types, unsigned int);
 	s = 2147483648; /* (2 ^ 31) */
-	a[0] = n / m;
+	a[0] = d / s;
 	for (i = 1; i < 32; i++)
 	{
 		s /= 2;
